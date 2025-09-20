@@ -31,10 +31,8 @@ function Description() {
     <div className="p-2 overflow-hidden">
       <span ref={descriptionRef} className="inline-block">
         Halo, saya Tariq /Ṭāriq/. Saya merupakan seorang Programmer yang handal
-        dalam bidang Front-End, Back-End dan Fullstack. Saya juga merupakan
-        salah satu member dari grup Ingin Menjadi Programmer Handal Namun Enggan
-        Ngoding. Seperti yang kami rasakan, mengoding itu mudah, hanya malas
-        saja.
+        dalam bidang Front-End, Back-End dan Fullstack. Mengoding adalah hal
+        yang saya sukai, tidak ada aktivitas menyenangkan selain mengoding.
       </span>
     </div>
   );
