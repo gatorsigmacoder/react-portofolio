@@ -1,0 +1,102 @@
+{
+  "status_code": 200,
+  "message": "Ok",
+  "data": [
+    {
+      "id": 1,
+      "name": "PHP"
+    },
+    {
+      "id": 2,
+      "name": "Javascript"
+    },
+    {
+      "id": 3,
+      "name": "Typescript"
+    },
+    {
+      "id": 4,
+      "name": "HTML"
+    },
+    {
+      "id": 5,
+      "name": "CSS"
+    },
+    {
+      "id": 6,
+      "name": "Golang"
+    },
+    {
+      "id": 7,
+      "name": "Java"
+    },
+    {
+      "id": 8,
+      "name": "Node.Js"
+    },
+    {
+      "id": 9,
+      "name": "Express Js"
+    },
+    {
+      "id": 10,
+      "name": "Nest Js"
+    },
+    {
+      "id": 11,
+      "name": "Laravel"
+    },
+    {
+      "id": 12,
+      "name": "React"
+    },
+    {
+      "id": 13,
+      "name": "Svelte"
+    },
+    {
+      "id": 14,
+      "name": "Fiber"
+    },
+    {
+      "id": 15,
+      "name": "Springboot"
+    },
+    {
+      "id": 16,
+      "name": "MySQL"
+    },
+    {
+      "id": 17,
+      "name": "Postgresql"
+    },
+    {
+      "id": 18,
+      "name": "MongoDB"
+    },
+    {
+      "id": 19,
+      "name": "Redis"
+    },
+    {
+      "id": 20,
+      "name": "Docker"
+    },
+    {
+      "id": 21,
+      "name": "Websocket"
+    },
+    {
+      "id": 22,
+      "name": "Linux"
+    },
+    {
+      "id": 23,
+      "name": "Nginx"
+    },
+    {
+      "id": 24,
+      "name": "GSAP"
+    }
+  ]
+}

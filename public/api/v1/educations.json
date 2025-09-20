@@ -1,0 +1,28 @@
+{
+  "status_code": 200,
+  "message": "Ok",
+  "data": [
+    {
+      "institution": "Universitas Ahmad Dahlan",
+      "degree": "Bachelor's Degree",
+      "major": "Informatika",
+      "duration": "2018 - 2023",
+      "gpa": "3.49",
+      "location": "Yogyakarta, Indonesia",
+      "achievements": [
+        "Dean's List for 4 consecutive semesters",
+        "Finalist in National Programming Competition 2022",
+        "Best Paper Award at Student Conference 2021"
+      ],
+      "courses": [
+        "Data Structures",
+        "Algorithms",
+        "Web Development",
+        "Database Systems",
+        "Software Engineering",
+        "Machine Learning",
+        "Computer Networks"
+      ]
+    }
+  ]
+}
