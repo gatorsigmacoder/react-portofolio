@@ -4,14 +4,23 @@ import { useTheme } from "@/components/theme-provider";
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
+  function adjustTheme() {
+    switch (theme) {
+      case "light":
+        setTheme("dark");
+        break;
+      case "dark":
+        setTheme("light");
+        break;
+      default:
+        setTheme("system");
+        break;
+    }
+  }
+
   return (
     <>
-      <Button
-        variant={"outline"}
-        onClick={() => {
-          theme === "dark" ? setTheme("light") : setTheme("dark");
-        }}
-      >
+      <Button variant={"outline"} onClick={() => adjustTheme()}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
