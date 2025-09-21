@@ -1,6 +1,7 @@
 import { useGetAllProjectsQuery } from "@/services/projectServices";
 import ProjectCard from "./components/projectCard";
 import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Projects = () => {
   const { data, isLoading } = useGetAllProjectsQuery();
@@ -16,6 +17,15 @@ const Projects = () => {
         </span>
         <Separator />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {isLoading && (
+            <div className="flex flex-col space-y-3">
+              <Skeleton className="h-[250px] md:w-[500px] w-[300px] rounded-xl" />
+              <div className="space-y-2">
+                <Skeleton className="h-4 md:w-[500px] w-[300px]" />
+                <Skeleton className="h-4 md:w-[450px] w-[250px]" />
+              </div>
+            </div>
+          )}
           {!isLoading &&
             data?.data?.map((project, index) => {
               return (
