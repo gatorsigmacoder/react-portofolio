@@ -90,8 +90,8 @@ const Education: React.FC<educationProps> = ({ data, skillSectionRef }) => {
               </div>
             </div>
 
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-center text-white/90 text-md md:text-lg">
+            <div className="mt-4 grid grid-cols-1 gap-4">
+              <div className="flex items-center text-white/90 text-md">
                 <BookOpen
                   size={isMobile ? 12 : 18}
                   className="mr-2 text-slate-300"
@@ -101,7 +101,7 @@ const Education: React.FC<educationProps> = ({ data, skillSectionRef }) => {
                 </span>
               </div>
 
-              <div className="flex items-center text-white/90 text-md md:text-lg">
+              <div className="flex items-center text-white/90 text-md">
                 <Calendar
                   size={isMobile ? 12 : 18}
                   className="mr-2 text-slate-300"
@@ -109,7 +109,7 @@ const Education: React.FC<educationProps> = ({ data, skillSectionRef }) => {
                 <span>{item.duration}</span>
               </div>
 
-              <div className="flex items-center text-white/90 text-md md:text-lg">
+              <div className="flex items-center text-white/90 text-md">
                 <Award
                   size={isMobile ? 12 : 18}
                   className="mr-2 text-slate-300"
