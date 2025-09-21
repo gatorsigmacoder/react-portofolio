@@ -12,6 +12,7 @@ import {
 } from "@/services/landingPageServices";
 import Tools from "./tools";
 import Contact from "./contact";
+import Navbar from "@/components/navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +23,26 @@ function LandingPage() {
   const skillsContentRef = useRef<HTMLDivElement>(null);
   const toolsSectionRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLDivElement>(null);
+  const heroSectionRef = useRef<HTMLDivElement>(null);
 
+  const section = [
+    {
+      name: "Home",
+      elementRef: heroSectionRef,
+    },
+    {
+      name: "Skills & Education",
+      elementRef: skillsSectionRef,
+    },
+    {
+      name: "Tools",
+      elementRef: toolsSectionRef,
+    },
+    {
+      name: "Contact",
+      elementRef: contactSectionRef,
+    },
+  ];
   const { data: skillData, isLoading: isLoadingSkillData } =
     useGetAllSkillsQuery();
   const { data: educationData, isLoading: isLoadingEducationData } =
@@ -86,6 +106,7 @@ function LandingPage() {
 
   return (
     <div className="App relative min-h-screen">
+      <Navbar sections={section} />
       <div className="fixed inset-0 -z-10">
         <Beams
           beamWidth={10}
@@ -98,8 +119,12 @@ function LandingPage() {
           rotation={34}
         />
       </div>
+
       {/* Hero Section with Background Image */}
-      <section className="relative h-screen overflow-hidden">
+      <section
+        ref={heroSectionRef}
+        className="relative h-screen overflow-hidden"
+      >
         <div
           ref={backgroundRef}
           className="absolute inset-0 bg-cover bg-center"
