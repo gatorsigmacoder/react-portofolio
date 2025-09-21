@@ -30,9 +30,9 @@ function Description() {
   return (
     <div className="p-2 overflow-hidden">
       <span ref={descriptionRef} className="inline-block">
-        Halo, saya Tariq /Ṭāriq/. Saya merupakan seorang Programmer yang handal
-        dalam bidang Front-End, Back-End dan Fullstack. Mengoding adalah hal
-        yang saya sukai, tidak ada aktivitas menyenangkan selain mengoding.
+        Halo, saya Tariq /Ṭāriq/. <br /> Saya merupakan seorang Programmer yang
+        handal dalam bidang Front-End, Back-End dan Fullstack. Mengoding adalah
+        hal yang saya sukai, tidak ada aktivitas menyenangkan selain mengoding.
       </span>
     </div>
   );

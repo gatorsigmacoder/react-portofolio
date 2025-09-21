@@ -35,7 +35,9 @@ function Contact() {
             </a>
           </span>
         </div>
-        <div className="mt-8">&copy; 2025 Tariq Roja Abdullah.</div>
+        <div className="mt-8">
+          &copy; 2025 Tariq Roja Abdullah. All rights reserved.
+        </div>
       </div>
     </div>
   );
